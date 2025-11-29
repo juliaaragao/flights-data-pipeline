@@ -2,7 +2,7 @@ import pandas as pd
 from config import FLIGHTS_CSV
 
 
-def extract_flights_data() -> pd.DataFrame:
+def extract_flights() -> pd.DataFrame:
     """
     Extracts flight data from the raw CSV file.
 
@@ -20,5 +20,5 @@ def extract_flights_data() -> pd.DataFrame:
 
 if __name__ == "__main__":  
     # Test the extraction function
-    flights_df = extract_flights_data()
+    flights_df = extract_flights()
     print(flights_df.head())
