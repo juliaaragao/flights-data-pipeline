@@ -1,6 +1,6 @@
 from pathlib import Path
 
-BASE_DIR = Path(__file__).resolve().parent.parents[2]
+BASE_DIR = Path(__file__).resolve().parent.parents[1]
 DATA_DIR = BASE_DIR / "data"
 RAW_DIR = DATA_DIR / "raw"
 CLEANED_DIR = DATA_DIR / "cleaned"
@@ -18,3 +18,7 @@ print(f"Cleaned Data Directory: {CLEANED_DIR}")
 print(f"Sample Data Directory: {SAMPLES_DIR}")
 print(f"Database Directory: {DATABASE_DIR}")
 print(f"Database Path: {DATABASE_PATH}")
+
+# Main raw CSV file for flights
+FLIGHTS_CSV = RAW_DIR / "flights.csv"
+
