@@ -1,0 +1,16 @@
+# Ignore raw and cleaned data
+data/raw/*
+data/cleaned/*
+
+# Ignore database files
+database/*
+
+# Ignore Jupyter notebook checkpoints
+**/.ipynb_checkpoints/
+
+# Ignore virtual environments (if any)
+venv/
+.env
+
+# macOS files
+.DS_Store
