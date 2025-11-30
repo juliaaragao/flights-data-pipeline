@@ -64,6 +64,32 @@ def transform_data() -> pd.DataFrame:
     else:
         print("No duplicate rows found")
 
+    final_column_order = [
+        "FLIGHT_DATE",
+        "DAY_OF_WEEK",
+
+        "AIRLINE",
+        "ORIGIN_AIRPORT",
+        "DESTINATION_AIRPORT",
+
+        "DISTANCE",
+
+        "DEPARTURE_DELAY",
+        "ARRIVAL_DELAY",
+        "IS_DELAYED_15",
+
+        "AIR_SYSTEM_DELAY",
+        "SECURITY_DELAY",
+        "AIRLINE_DELAY",
+        "LATE_AIRCRAFT_DELAY",
+        "WEATHER_DELAY",
+    ]
+
+    # Only keep columns that exist
+    df = df[[c for c in final_column_order if c in df.columns]]
+
+    print("Reordered and selected final columns")
+
     # Save cleaned data
     CLEANED_DIR.mkdir(parents=True, exist_ok=True)
     cleaned_file_path = CLEANED_DIR / 'cleaned_flights_data.csv'
