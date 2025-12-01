@@ -38,20 +38,29 @@ flights-data-pipeline/
 
 ## Instalation
 ### Clone the repository
+```
 git clone https://github.com/<your-username>/flights-data-pipeline.git
-
 cd flights-data-pipeline
+```
 
 ### Installing dependencies using UV
+```
 uv sync
+```
 
 ### Clone the repository
 Download kaggle csv files : https://www.kaggle.com/datasets/usdot/flight-delays/data?select=flights.csv 
 
-Place the Kaggle file inside: data/raw/flights.csv
+Place the Kaggle file inside: 
+```
+data/raw/flights.csv
+```
 
 ## Running full pipeline
-Just one command: uv run python src/flights_data_pipeline/run_pipeline.py
+Just one command: 
+```
+uv run python src/flights_data_pipeline/run_pipeline.py
+```
 
 **1. Extract**
 - Loads and reads the raw CSV from data/raw/.
