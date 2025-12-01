@@ -64,12 +64,14 @@ uv run python src/flights_data_pipeline/run_pipeline.py
 
 **1. Extract**
 - Loads and reads the raw CSV from data/raw/.
+  
 **2. Transform**
 - Creates FLIGHT_DATE
 - Creates IS_DELAYED_15
 - Removes duplicates (if it exists)
 - Keeps relevant columns
 - Saves cleaned_flights_data.csv
+  
 **3. Load**
 - Writes the cleaned data into SQLite
 - Creates the table flights
