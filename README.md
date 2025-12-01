@@ -13,6 +13,7 @@ The goal of this project is to demonstrate good engineering practices for data e
 This repository is structured as a small but realistic pipeline that a Data Engineer or Data Analyst could use as the foundation for delay analysis or KPI dashboards.
 
 ## Project Structure
+```
 flights-data-pipeline/
 │
 ├── data/
@@ -33,11 +34,12 @@ flights-data-pipeline/
        ├── load.py
        ├── config.py
        └── run_pipeline.py
-
+```
 
 ## Instalation
 ### Clone the repository
 git clone https://github.com/<your-username>/flights-data-pipeline.git
+
 cd flights-data-pipeline
 
 ### Installing dependencies using UV
@@ -45,6 +47,7 @@ uv sync
 
 ### Clone the repository
 Download kaggle csv files : https://www.kaggle.com/datasets/usdot/flight-delays/data?select=flights.csv 
+
 Place the Kaggle file inside: data/raw/flights.csv
 
 ## Running full pipeline
